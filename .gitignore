@@ -2,16 +2,26 @@
 venv/
 .venv/
 env/
+ENV/
 
 # Python cache and compiled files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Local databases and uploaded media
+# Build and packaging files
+.Python
+build/
+dist/
+*.egg-info/
+
+# Django local files
 *.sqlite3
+*.sqlite3-journal
 media/
 staticfiles/
+*.log
+local_settings.py
 
 # Environment and secret files
 .env
@@ -24,10 +34,14 @@ staticfiles/
 .DS_Store
 Thumbs.db
 
-# Test and coverage artifacts
+# Testing and coverage
 .pytest_cache/
+.mypy_cache/
 .coverage
 htmlcov/
+.tox/
+.nox/
 
-# Logs
-*.log
+# Local tooling
+.ipynb_checkpoints/
+tempCodeRunnerFile.py
