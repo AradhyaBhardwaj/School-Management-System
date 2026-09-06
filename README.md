@@ -1,4 +1,4 @@
-git --version# Student Management System
+Student Management System
 
 A web-based academic management platform built with Python and Django. The application brings common college administration tasks into one place and gives each user a focused dashboard based on their role.
 
